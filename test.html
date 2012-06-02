@@ -225,6 +225,9 @@
     </div>
 
 	
+<!-- #26　ツールチップを表示させる -->
+	<p><a href="#" rel="tooltip" data-original-title="紹介文字列">テスト</a>だよ</p>
+	
 
 	
 	<div id="footer">
@@ -239,6 +242,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
+<!-- ツールチップのスクリプト -->
+        <script>
+        $(function() {
+            $('a[rel=tooltip]').tooltip();
+        });
+    </script>
     
 </body>
 </html>
