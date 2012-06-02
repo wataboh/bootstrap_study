@@ -228,7 +228,9 @@
 <!-- #26　ツールチップを表示させる -->
 	<p><a href="#" rel="tooltip" data-original-title="紹介文字列">テスト</a>だよ</p>
 	
-
+<!-- #27 ポップオーバーを表示させる -->
+	<p><a href="#" rel="popover" data-original-title="紹介文字列" data-content="がっつり文字列も表示したい">テスト</a>だよ</p>
+	
 	
 	<div id="footer">
 		footer
@@ -242,10 +244,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
-<!-- ツールチップのスクリプト -->
+<!-- ツールチップとポップオーバースクリプト -->
         <script>
         $(function() {
             $('a[rel=tooltip]').tooltip();
+            $('a[rel=popover]').popover();
         });
     </script>
     
