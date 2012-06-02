@@ -4,13 +4,30 @@
     <meta charset="utf-8">
     <title>Twitter Bootstrapの練習</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 </head>
-<body>
-
+<body style="padding-top:60px">
 
 
 <div class="container">
+
+<!-- #21 基本的なナビゲーションバーを作る 
+    どうもこれと<link href="css/bootstrap-responsive.min.css" rel="stylesheet">相性が悪いみたいだから外す．
+-->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="">Smilenet</a>
+				<ul class="nav">
+					<li class="active"><a href="">Home</a></li>
+					<li><a href="">患者メニュー一覧</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container" style="padding-top:40px">
+
+
 	
 	<div id="header">
 	header
@@ -176,6 +193,8 @@
 	</div>
 	
 
+	
+	
 	<div id="footer">
 		footer
 	</div>
